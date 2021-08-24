@@ -66,3 +66,29 @@ numbers3[0] = 23 //changed 1 which had the index of 0 to 23
 numbers3[9] = 100 //changed 10 which had the index of 9 to 100
 
 console.log(numbers3) // [23, 2, 3, 4, 5, 6, 7, 8, 9, 100]
+
+const countries = [
+    'United States',
+    'Mexico',
+    'Canada',
+    'England',
+    'Africa'
+]
+
+const lastCountry = countries.length - 1
+
+countries[lastCountry] = 'Barbados'
+
+console.log(countries) //["United States", "Mexico", "Canada", "England", "Barbados"]
+
+// Methods to manipulate array
+/*There are different methods to manipulate an array. These are some of the available methods to deal with 
+arrays:Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift*/
+
+//Array Constructor
+
+//Array to create an array
+const arr4 = Array() // creates a empty array
+
+const eightEmptyValues = Array(8)
+console.log(eightEmptyValues) //[empty × 8]
