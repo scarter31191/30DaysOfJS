@@ -115,3 +115,43 @@ const laLega = ['Barca', 'Madrid', 'Atletico']
 const prem = ['Liverpool', 'Man City', 'Chelsea']
 const futbol = prem.concat(laLega)
 console.log(futbol)// ["Liverpool", "Man City", "Chelsea", "Barca", "Madrid", "Atletico"]
+
+/*
+Getting array length
+Length:To know the size of the array
+*/
+const names = ["Mike", "Joe", "Bob"]
+console.log(names.length)// 3
+
+/*
+Getting index of an element in an array
+indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.
+*/
+const count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(count.indexOf(0))// -1
+console.log(count.indexOf(2))// 1
+console.log(count.indexOf(8))// 7
+console.log(count.indexOf(12))// -1
+console.log(count.indexOf(3))// 2
+
+/*
+Check an element if it exist in an array.
+Check items in a list
+*/
+const fruit = ['banana', 'orange', 'mango', 'lemon']
+const index = fruit.indexOf('mango')// this is on the list
+
+// if(index != -1) {
+//   console.log('this is on the list')
+// } else {
+//   console.log('this is not on the list')
+// }
+
+index != -1 ? console.log('this is on the list') : console.log('this is not on the list');
+
+const indexOfGrapes = fruit.indexOf('grape');
+if(indexOfGrapes != -1){
+  console.log('this is on the list');
+}else{
+  console.log('this is not on the list');
+}
