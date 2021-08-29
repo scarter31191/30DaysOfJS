@@ -155,3 +155,16 @@ if(indexOfGrapes != -1){
 }else{
   console.log('this is not on the list');
 }
+
+const colors = ['Blue', 'Black', 'Red'];
+const indexOfColor = colors.indexOf('pink'); // no luck
+
+if(indexOfColor != -1){
+  console.log('found it!');
+}else{
+  console.log('no luck');
+}
+
+const indexOfBlack = colors.indexOf('Black'); //found it!
+indexOfBlack != -1 ? console.log('found it!') : console.log('no luck');
+
