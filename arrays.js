@@ -90,5 +90,28 @@ arrays:Array, length, concat, indexOf, slice, splice, join, toString, includes, 
 //Array to create an array
 const arr4 = Array() // creates a empty array
 
-const eightEmptyValues = Array(8)
+const eightEmptyValues = Array(8) // creates 8 empty values
 console.log(eightEmptyValues) //[empty × 8]
+
+//CREATE STATIC VALUE WITH .FILL
+//fill: Fill all the array elements with a static value
+const rapper = Array() //create a empty array
+
+const topFiveRapper = Array(5).fill('Dylon') //creates 5 element values filled with 'Dylon'
+console.log(topFiveRapper) // ["Dylon", "Dylon", "Dylon", "Dylon", "Dylon"]
+
+/*
+Concatenating array using concat
+concat:To concatenate (join) two arrays.
+*/
+const east = ['knicks', 'nets', 'bucks']
+const west = ['clippers, nuggets, lakers']
+const nbaTeams = east.concat(west)
+const nbaTeams2 = west.concat(east)
+console.log(nbaTeams)// ["knicks", "nets", "bucks", "clippers, nuggets, lakers"]
+console.log(nbaTeams2)// ["clippers, nuggets, lakers", "knicks", "nets", "bucks"]
+
+const laLega = ['Barca', 'Madrid', 'Atletico']
+const prem = ['Liverpool', 'Man City', 'Chelsea']
+const futbol = prem.concat(laLega)
+console.log(futbol)// ["Liverpool", "Man City", "Chelsea", "Barca", "Madrid", "Atletico"]
