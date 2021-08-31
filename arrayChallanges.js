@@ -40,14 +40,14 @@ const countries = [
     Print out each company **** print array to string using toString() ****
     Change each company name to uppercase one by one and print them out X* practice for loops
     Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies. ***X study .join()
-    Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
-    Filter out companies which have more than one 'o' without the filter method
-    Sort the array using sort() method
-    Reverse the array using reverse() method
-    Slice out the first 3 companies from the array
-    Slice out the last 3 companies from the array
-    Slice out the middle IT company or companies from the array
-    Remove the first IT company from the array
+    Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found *X see if you can make a method to return company name
+    Filter out companies which have more than one 'o' without the filter method X
+    Sort the array using sort() method *
+    Reverse the array using reverse() method *
+    Slice out the first 3 companies from the array *
+    Slice out the last 3 companies from the array *
+    Slice out the middle IT company or companies from the array *
+    Remove the first IT company from the array *
     Remove the middle IT company or companies from the array
     Remove the last IT company from the array
     Remove all IT companies
@@ -93,10 +93,20 @@ for(let i = 0; i < itCompaniesUppercase.length; i++){
 
 console.log(itCompanies.join(' , '))
 
- const findIt = itCompanies.indexOf('Amazon')
- console.log(findIt)
+ const findIt = itCompanies.indexOf('Amazon') 
     if(findIt != -1){
-        console.log('company found')
+        console.log(itCompanies[6])
     }else{
         console.log('company is not found')
     }
+ 
+itCompanies.sort()
+console.log(itCompanies)
+
+itCompanies.reverse()
+console.log(itCompanies)
+
+console.log(itCompanies.slice(0, 3))    
+console.log(itCompanies.slice(4, 7))
+console.log(itCompanies.slice(3, 4))
+console.log(itCompanies.shift())
