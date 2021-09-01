@@ -93,9 +93,9 @@ for(let i = 0; i < itCompaniesUppercase.length; i++){
 
 console.log(itCompanies.join(' , '))
 
- const findIt = itCompanies.indexOf('Amazon') 
+ const findIt = itCompanies.indexOf('Bass') 
     if(findIt != -1){
-        console.log(itCompanies[6])
+        console.log(itCompanies[findIt])
     }else{
         console.log('company is not found')
     }
